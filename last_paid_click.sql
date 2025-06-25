@@ -1,30 +1,23 @@
 ~~ Задание 2
-WITH paid_sessions AS (
+WITH
+sessions_with_leads AS (
 SELECT
 s.visitor_id,
 s.visit_date,
 s.source AS utm_source,
 s.medium AS utm_medium,
-s.campaign AS utm_campaign
-FROM sessions s
-WHERE LOWER(s.medium) IN ('cpc', 'cpm', 'cpa', 'youtube', 'cpp', 'tg', 'social')
-),
-sessions_with_leads AS (
-SELECT
-ps.*,
+s.campaign AS utm_campaign,
 l.lead_id,
 l.amount,
 l.created_at,
 l.closing_reason,
 l.status_id,
-ROW_NUMBER() OVER (
-PARTITION BY l.visitor_id
-ORDER BY ps.visit_date DESC
-) AS rn
-FROM paid_sessions ps
+ROW_NUMBER() OVER (PARTITION BY l.visitor_id ORDER BY s.visit_date DESC) AS rn
+FROM sessions s
 JOIN leads l
-ON ps.visitor_id = l.visitor_id
-AND ps.visit_date <= l.created_at
+ON s.visitor_id = l.visitor_id
+AND s.visit_date <= l.created_at
+WHERE LOWER(s.medium) <>'organic'
 ),
 last_paid_clicks AS (
 SELECT *
@@ -60,4 +53,4 @@ amount DESC NULLS LAST,
 visit_date ASC,
 utm_source ASC,
 utm_medium ASC,
-utm_campaign ASC;
+utm_campaign asc;
