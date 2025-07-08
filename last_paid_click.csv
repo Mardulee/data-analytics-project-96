@@ -1,11 +1,16 @@
-"visitor_id","visit_date","utm_source","utm_medium","utm_campaign","lead_id","created_at","amount","closing_reason","status_id"
-"35060e525ca62de0a0aa93992c7e07799d855f79",2023-06-01 10:40:28.000,yandex,cpc,prof-frontend,"26066151",2023-06-15 12:52:40.000,237990,Успешная продажа,142
-d183fbda6f03b965a1cd1cee0a3f7b81a44b78ec,2023-06-01 14:39:00.000,yandex,cpc,base-frontend,"74450379",2023-06-30 14:36:31.000,201150,Успешная продажа,142
-ca003c89182365dd75262e54772fda03ee923e92,2023-06-01 04:58:00.000,vk,cpc,freemium-frontend,"48838540",2023-06-20 20:49:16.000,189210,Успешная продажа,142
-d31c95902f2d3183e7052c235ad72d82838e98c2,2023-06-01 10:44:00.000,yandex,cpc,freemium,"21579820",2023-06-19 15:28:22.000,188991,Успешная продажа,142
-fd1438246c3b520c8dfa1aed4c73133c8ca10ab4,2023-06-01 14:57:00.000,yandex,cpc,prof-frontend,"23169912",2023-06-14 06:13:44.000,180306,Успешная продажа,142
-b6ddcd9f994bad353f37b0c5f7115b66d07b10c2,2023-06-01 03:41:00.000,vk,cpc,prof-java,"50769366",2023-06-15 11:43:46.000,178800,Успешная продажа,142
-f2db2eb1295e51cf3426e4211172d839e7f93ddc,2023-06-01 19:39:00.000,yandex,cpc,prof-frontend,"25327894",2023-06-11 21:57:08.000,167625,Успешная продажа,142
-bd5ad484a0cf7f80c1522009dd4ee3d825f35a46,2023-06-01 11:34:00.000,yandex,cpc,base-python,"73882489",2023-06-26 08:36:49.000,160920,Успешная продажа,142
-f1dc9c36bd7269ed93e736b29de33e0e7a02e1a3,2023-06-20 15:15:04.701,telegram,cpp,base-java,"20614407",2023-06-26 17:47:47.000,151192,Успешная продажа,142
-"36d4c2cfec3dba3a50cfd0d31ace2d4dcb70560c",2023-06-01 16:43:00.000,yandex,cpc,dod-php,"24703215",2023-06-03 14:40:56.000,150255,Успешная продажа,142
+"visit_date","utm_source","utm_medium","utm_campaign","visitors_count","total_cost","leads_count","purchases_count","revenue"
+2023-06-01,yandex,cpc,freemium,103,"21654",100,25,1654810
+2023-06-01,yandex,cpc,prof-frontend,78,"57138",73,12,1057000
+2023-06-01,yandex,cpc,prof-python,62,"33026",61,7,613196
+2023-06-01,yandex,cpc,base-python,31,"12524",28,7,476021
+2023-06-01,vk,cpc,prof-python,71,"2028",40,5,355564
+2023-06-01,vk,cpc,freemium-frontend,80,"3160",43,5,338083
+2023-06-01,yandex,cpc,prof-java,49,"29490",49,4,284590
+2023-06-01,yandex,cpc,base-frontend,40,"18061",39,3,268515
+2023-06-01,vk,cpc,prof-java,51,"3115",23,2,232726
+2023-06-01,yandex,cpc,prof-data-analytics,14,"10086",14,2,220264
+2023-06-01,yandex,cpc,prof-professions-brand,13,"4818",13,3,154287
+2023-06-20,telegram,cpp,base-java,3,"",1,1,151192
+2023-06-01,yandex,cpc,dod-php,4,"5964",4,1,150255
+2023-06-01,yandex,cpc,base-professions-retarget,4,"151",4,1,134100
+2023-06-07,vk,social,hexlet-blog,3,"",1,1,84000
