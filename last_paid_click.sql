@@ -53,4 +53,4 @@ amount DESC NULLS LAST,
 visit_date ASC,
 utm_source ASC,
 utm_medium ASC,
-utm_campaign ASC:
+utm_campaign ASC;
