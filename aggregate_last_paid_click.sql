@@ -60,8 +60,8 @@ SELECT
     COALESCE((a.spent)::text, '') AS total_cost,
     COUNT(DISTINCT lp.lead_id) AS leads_count,
     COUNT(DISTINCT lp.lead_id) FILTER (
-                                       WHERE lp.status_id = 142
-                                       ) AS purchases_count,
+        WHERE lp.status_id = 142
+    ) AS purchases_count,
     SUM(lp.amount) AS revenue
 FROM last_paid AS lp
 LEFT JOIN ads AS a
@@ -82,4 +82,4 @@ ORDER BY
     visitors_count DESC,
     lp.utm_source ASC,
     lp.utm_medium ASC,
-    lp.utm_campaign asc;
+    lp.utm_campaign ASC;
