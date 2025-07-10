@@ -53,10 +53,10 @@ ads AS (
 )
 SELECT
     lp.visit_date::date,
+    COUNT(DISTINCT lp.visitor_id) AS visitors_count,
     lp.utm_source,
     lp.utm_medium,
     lp.utm_campaign,
-    COUNT(DISTINCT lp.visitor_id) AS visitors_count,
     COALESCE((a.spent)::text, '') AS total_cost,
     COUNT(DISTINCT lp.lead_id) AS leads_count,
     COUNT(DISTINCT lp.lead_id) FILTER (
