@@ -1,4 +1,3 @@
-~~ Задание 2
 WITH
 sessions_with_leads AS (
     SELECT
