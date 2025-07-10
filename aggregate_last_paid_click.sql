@@ -1,4 +1,3 @@
-# Задание 3.
 WITH tab AS (
     SELECT
         visitor_id,
